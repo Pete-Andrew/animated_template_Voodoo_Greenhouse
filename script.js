@@ -6,3 +6,8 @@ AOS.init({
     once: true, //whether animation should happen only once whilst scrolling down
     mirror: false, // whether elements should animate out whilst scrolling past
   });
+
+  // default flies:
+new BugController({'minBugs':1, 'maxBugs':2, 'mouseOver':'die'});
+  // default spiders:
+new SpiderController({'minBugs':0, 'maxBugs':0});
