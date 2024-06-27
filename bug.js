@@ -560,9 +560,7 @@ var Bug = {
 
     setPos: function (top, left) {
         this.bug.top = top || this.random(this.options.edge_resistance, document.documentElement.clientHeight - this.options.edge_resistance);
-
         this.bug.left = left || this.random(this.options.edge_resistance, document.documentElement.clientWidth - this.options.edge_resistance);
-
         this.moveBug(this.bug.left, this.bug.top, (90 - this.angle_deg));
     },
 
@@ -646,7 +644,7 @@ var Bug = {
 
         }
 
-        // make it wiggle: disabled becuase its just too fast to see... better would be to make its path wiggly.
+        // make it wiggle: disabled because its just too fast to see... better would be to make its path wiggly.
         //angle = angle - (this.deg2rad(this.random(0,10)));
         //console.log('angle: ',this.rad2deg(angle));
 
@@ -890,10 +888,7 @@ var Bug = {
             this.bug.style.bottom = Math.ceil((rotationOffset - zoomOffset)) + 'px'; // because its rotated and zoomed.
             this.bug.style.left = this.bug.left + 'px';
             this.bug.style.backgroundPosition = '-' + ((deathType * 2) * this.options.bugWidth) + 'px 100%';
-
-
             this.twitch(deathType);
-
             return;
         }
 
