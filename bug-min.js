@@ -443,6 +443,7 @@ var Bug = {
         var a = this.random(0, this.options.numDeathTypes - 1);
         this.alive = !1;
         this.drop(a)
+        console.log("You killed Kenny, You Bastard!");
     },
     drop: function(a) {
         var b = this.bug.top,

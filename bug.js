@@ -159,6 +159,7 @@ var BugDispatch = {
 
             // add mouse over events:
             that.add_events_to_bug(thebug);
+            
         }
 
         // add window event if required:
@@ -277,6 +278,7 @@ var BugDispatch = {
         } else if (mode === 'die') {
             // drop dead!
             bug.die();
+
         } else if (mode === 'multiply') {
             if (!this.multiplyDelay && this.bugs.length < this.options.maxBugs) {
                 // spawn another: 
@@ -839,12 +841,16 @@ var Bug = {
     },
 
     die: function () {
+        
         this.stop();
         //pick death style:
         var deathType = this.random(0, this.options.numDeathTypes - 1);
 
         this.alive = false;
+        console.log("You killed Kenny, You Bastard!");
         this.drop(deathType);
+
+        
     },
 
     drop: function (deathType) {
@@ -859,6 +865,7 @@ var Bug = {
             that = this;
 
         this.bug.classList.add('bug-dead');
+       
 
         this.dropTimer = requestAnimFrame(function (t) {
             that._lastTimestamp = t;
