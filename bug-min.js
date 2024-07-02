@@ -9,11 +9,10 @@ let deadBugs = 0;
 function anyBugsLeft() {
     if (deadBugs == liveBugs) {
         console.log("You've killed more than one bug");
-        // add in a countdown then spawn again
-        
+        // add in a spawn's again
+        new BugController({'minBugs':2, 'maxBugs':2, 'mouseOver':'die'});
     }
 }
-
 
 var BugDispatch = {
     options: {
@@ -39,6 +38,7 @@ var BugDispatch = {
         minTimeBetweenMultipy: 1E3,
         mouseOver: "random"
     },
+
     initialize: function(a) {
         this.options = mergeOptions(this.options, a);
         this.options.minBugs > this.options.maxBugs && (this.options.minBugs = this.options.maxBugs);
@@ -176,9 +176,12 @@ var BugDispatch = {
         return c ? Math.round(d) : d
     }
 },
+
+
 BugController = function() {
     this.initialize.apply(this, arguments)
 };
+
 BugController.prototype = BugDispatch;
 
 var SpiderController = function() {
@@ -200,6 +203,7 @@ this.options = mergeOptions(this.options, {
 });
 this.initialize.apply(this, arguments)
 };
+
 SpiderController.prototype = BugDispatch;
 var Bug = {
     options: {
@@ -536,11 +540,13 @@ var Bug = {
             } : null
     }
 },
+
+// spawns the bugs
 SpawnBug = function() {
     var a = {},
         b;
     for (b in Bug) Bug.hasOwnProperty(b) && (a[b] = Bug[b]);
-    console.log("bug spawned");
+    console.log("SpawnBug called");
     liveBugs +=1;
     console.log("LiveBugs = " + liveBugs)
     return a
