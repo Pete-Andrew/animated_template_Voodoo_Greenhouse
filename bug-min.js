@@ -10,6 +10,7 @@ function anyBugsLeft() {
     if (deadBugs == liveBugs) {
         console.log("You've killed more than one bug");
         // add in a countdown then spawn again
+        
     }
 }
 
@@ -30,7 +31,7 @@ var BugDispatch = {
         bugHeight: 14,
         num_frames: 5,
         zoom: 10,
-        canFly: !0,
+        canFly: 0, // if canFly is set to !0 the flies can fly in from the edge which is slightly less convincing 
         canDie: !0,
         numDeathTypes: 3,
         monitorMouseMovement: !1,
