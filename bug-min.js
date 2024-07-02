@@ -3,6 +3,9 @@
  Released under MIT-style license.
  Original Screen Bug http://screen-bug.googlecode.com/git/index.html
 */
+let liveBugs;
+let deadBugs = 0;
+
 var BugDispatch = {
     options: {
         minDelay: 500,
@@ -444,6 +447,8 @@ var Bug = {
         this.alive = !1;
         this.drop(a)
         console.log("You killed Kenny, You Bastard!");
+        deadBugs += 1;
+        console.log("number of dead = " + deadBugs)
     },
     drop: function(a) {
         var b = this.bug.top,
