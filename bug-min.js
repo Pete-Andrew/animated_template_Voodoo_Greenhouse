@@ -3,8 +3,16 @@
  Released under MIT-style license.
  Original Screen Bug http://screen-bug.googlecode.com/git/index.html
 */
-let liveBugs;
+let liveBugs = 0;
 let deadBugs = 0;
+
+function anyBugsLeft() {
+    if (deadBugs == liveBugs) {
+        console.log("You've killed more than one bug");
+        // add in a countdown then spawn again
+    }
+}
+
 
 var BugDispatch = {
     options: {
@@ -449,6 +457,9 @@ var Bug = {
         console.log("You killed Kenny, You Bastard!");
         deadBugs += 1;
         console.log("number of dead = " + deadBugs)
+
+        anyBugsLeft();
+
     },
     drop: function(a) {
         var b = this.bug.top,
@@ -528,7 +539,11 @@ SpawnBug = function() {
     var a = {},
         b;
     for (b in Bug) Bug.hasOwnProperty(b) && (a[b] = Bug[b]);
+    console.log("bug spawned");
+    liveBugs +=1;
+    console.log("LiveBugs = " + liveBugs)
     return a
+
 },
 mergeOptions = function(a, b, c) {
     "undefined" == typeof c && (c = !0);
