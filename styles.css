@@ -1,3 +1,15 @@
+@font-face {
+   font-family: "VoodooFont";
+   src: url("fonts/graveyard-guardian.regular.ttf") format('truetype');
+}
+
+#VoodooGreenHouseTitle {
+   font-family: "VoodooFont", sans-serif;
+   font-size: 100px;
+   background-color: #f5f5f5;
+   box-shadow: 0px 0px 25px 25px #f5f5f5;
+}
+
 #confirm {
     display: none;
     background-color: rgb(194, 195, 251);

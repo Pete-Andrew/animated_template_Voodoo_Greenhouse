@@ -11,3 +11,4 @@ AOS.init({
 new BugController({'minBugs':2, 'maxBugs':2, 'mouseOver':'die'});
 // default spiders:
 // new SpiderController({'minBugs':0, 'maxBugs':0});
+
