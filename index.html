@@ -22,7 +22,15 @@
   <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
       <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
         
-        <!-- Nav Left Side -->
+        <!-- Navbar Left Side -->
+
+        <span style="font-size:30px;cursor:pointer" id="openNavButton">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+          <div id="contentsOfSideNav">
+              <a href="javascript:void(0)" class="closebtn" id="closeNavButton">&times;</a>
+              </div>
+        </div>
+
           <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
   
              <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="https://www.creative-tim.com/learning-lab/tailwindcss-starter-project#/presentation">
@@ -753,7 +761,7 @@
 <!-- AOS.js -->
 <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"> // defer has been added so that the js is executed once html has been loaded</script> 
 <script defer src="script.js"></script>
-<!-- Navigation Script -->
+<!-- Navbar Script -->
 <script defer src="navbar.js"></script>
 <!-- bugs script -->
 <script type='text/javascript' src='bug-min.js'></script>

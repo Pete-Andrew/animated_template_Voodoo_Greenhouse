@@ -42,4 +42,51 @@
     bottom: 0px;
  }
 
+
+ /* Nav Bar */
+.sidenav {
+   
+   height: 100%;
+   width: 0%;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: rgb(250, 255, 250, 0.9);
+   overflow-x: hidden;
+   transition: 0.5s;
+   padding-top: 60px;
+ }
+
+ #contentsOfSideNav {
+   height:100%;
+ }
+ 
+ /* the about botton is in an anchor tag */
+ .sidenav a {
+   padding: 0px 0px 0px 0px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #818181;
+   display: block;
+   transition: 0.3s;
+ }
+ 
+ .sidenav a:hover {
+   color: #f1f1f1;
+ }
+ 
+ .sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+   margin-left: 50px;
+ }
+ 
+ @media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+ }
+
  /* https://www.tutorialspoint.com/How-to-change-button-label-in-confirm-box-using-JavaScript */
