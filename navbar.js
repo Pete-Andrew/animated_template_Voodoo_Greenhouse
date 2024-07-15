@@ -11,3 +11,4 @@ const closeNavButton = document.getElementById('closeNavButton');
 closeNavButton.addEventListener('click', function () {
   document.getElementById("mySidenav").style.width = "0px";
 });
+

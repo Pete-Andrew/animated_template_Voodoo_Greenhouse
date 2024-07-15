@@ -21,26 +21,26 @@
 </head>
 
 <body class="text-gray-800 antialiased">
-  <!-- Navigation -->
-  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
-    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+  
+  <!-- Navbars -->
+  <nav id="navBarHeader" class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg" >
+    <div class="container px-6 mx-auto flex flex-wrap items-center justify-between">
 
       <!-- Navbar Left Side -->
-
-      <span style="font-size:30px;cursor:pointer" id="openNavButton">&#9776;</span>
+       <span style="font-size:30px;cursor:pointer" id="openNavButton">&#9776;</span>
       <div id="mySidenav" class="sidenav">
         <div id="contentsOfSideNav">
           <a href="javascript:void(0)" class="closebtn" id="closeNavButton">&times;</a>
         </div>
       </div>
 
-      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
 
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
         <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
           href="https://www.creative-tim.com/learning-lab/tailwindcss-starter-project#/presentation">
-          <!-- Nav Title -->
-          <!-- Creative Tim -->
+          <!-- Nav Title -->  
         </a>
+
         <!-- Hamburger Menu (Mobile) -->
         <button
           class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -49,8 +49,9 @@
           <i class="text-white fas fa-bars"></i>
         </button>
       </div>
-      <!-- Nav Right Side -->
-      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+
+      
+      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto" >
         <!-- Social Media Button -->
         <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -86,30 +87,31 @@
   </nav>
   <!-- End of Navigation -->
 
+
+
+
   <!-- Splash Page -->
   <main>
-    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+    <div class="relative pt-16 pb-12 flex content-center items-center justify-center" style="min-height: 75vh;">
       <!-- Background Image -->
       <div class="absolute top-0 w-full h-full bg-bottom bg-cover"
         style="background-image: url(https://images.unsplash.com/photo-1442120108414-42e7ea50d0b5?q=80&w=1849&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
         <!-- <span id="blackOverlay" class="w-full h-full absolute opacity-25 bg-white"></span> -->
       </div>
       <!-- Text Over Main Background -->
+      
       <div class="container relative mx-auto">
         <div class="items-center flex flex-wrap">
           <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-            <div class="pr-12">
+            <div class="">
               <h1 class="text-lime-900" data-aos="fade-up" data-aos-delay="200" id="VoodooGreenHouseTitle">
                 Welcome to the Voodoo Greenhouse
               </h1> <br>
-
-              <!-- <p class="mt-4 text-lg text-lime-950 font-semibold text-l" data-aos="fade-right" data-aos-delay="300">
-                Lorem ipsum dolor sit. Eum totam aspernatur aliquam praesentium aperiam magni, dignissimos, atque incidunt fuga nulla distinctio eligendi enim placeat nesciunt, soluta maxime nihil ipsa minus!
-              </p> -->
             </div>
           </div>
         </div>
       </div>
+
       <!-- Making Polygon Shape in Background -->
       <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
         style="height: 70px; transform: translateZ(0);">

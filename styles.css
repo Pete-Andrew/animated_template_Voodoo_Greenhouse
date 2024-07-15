@@ -3,11 +3,28 @@
    src: url("fonts/graveyard-guardian.regular.ttf") format('truetype');
 }
 
+/* Style the navbar */
+#navbar {
+   overflow: hidden;
+   background-color: #333;
+ }
+ 
+ /* Navbar links */
+ #navbar a {
+   float: left;
+   display: block;
+   /* color: #f2f2f2; */
+   text-align: center;
+   /* padding: 14px; */
+   text-decoration: none;
+ }
+  
 #VoodooGreenHouseTitle {
    font-family: "VoodooFont", sans-serif;
    font-size: 100px;
    background-color: #f5f5f5;
    box-shadow: 0px 0px 25px 25px #f5f5f5;
+   
 }
 
 #confirm {
@@ -42,8 +59,21 @@
     bottom: 0px;
  }
 
-
- /* Nav Bar */
+/* NavBarHeader */
+ /* keeps the nav bar attached to the top of the screen  */
+#navBarHeader {
+   position: fixed;
+   /* z-index sets which div's the current one is in front of or behind */
+   z-index: 1;
+   top: 0;
+   width: 100%;
+   /* background-color:#178073; */
+   padding: 1vh;
+   /* box-shadow: 0px 0px 10px #6fb0bb; */
+   padding-top: 1%;
+ }
+ 
+ /* side Nav Bar */
 .sidenav {
    
    height: 100%;
